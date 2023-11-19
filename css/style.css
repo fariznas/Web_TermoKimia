@@ -1,0 +1,354 @@
+:root {
+  --primary: #748e63;
+  --bg: #ffffff;
+  --ple: #c1d8c3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--ple);
+  min-height: 11500px;
+}
+
+/* Navbar Start */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: rgba(0, 0, 0, 0.333);
+  border-bottom: 1px solid var(--primary);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar .navbar-logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  font-style: italic;
+}
+
+.navbar .navbar-logo span {
+  color: var(--primary);
+  text-shadow: 1px 1px 3px rgb(1, 1, 3);
+}
+
+.navbar .navbar-nav a {
+  color: #fff;
+  display: inline-block;
+  font-size: 1.3rem;
+  margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover {
+  color: var(--primary);
+}
+
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--primary);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+}
+
+.navbar .navbar-extra a {
+  color: #fff;
+  margin: 0 0.5rem;
+}
+/* Navbar End */
+
+/* Hero Section Start */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url("../img/pler1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, var(--ple) 1%, rgba(225, 225, 225, 0) 25%);
+}
+
+.hero .content {
+  padding: 1.4rem 7%;
+  max-width: 100rem;
+}
+
+.hero .content h1 {
+  font-size: 5em;
+  color: #748e63;
+  text-shadow: 1px 1px 3px rgb(1, 1, 3);
+}
+
+.hero .content p {
+  font-size: 1.6rem;
+  margin-top: 1rem;
+  line-height: 1.4;
+  font-weight: 500;
+  text-shadow: 1px 1px 3px rgb(1, 1, 3);
+}
+/* Hero Section End */
+
+/* Simbol F */
+.jenis .pembentukan .row h3 span,
+.jenis .penguraian .row h3 span,
+.jenis .pembakaran .row h3 span {
+  font-size: 0.8rem;
+}
+
+/* Macam Start */
+.macam,
+.jenis,
+.hukum,
+.kaidah,
+.energi,
+.contoh {
+  padding: 8rem 7% 1.4rem;
+}
+
+.macam h2,
+.jenis .judul h2,
+.hukum .judul h2,
+.kaidah .judul h2,
+.energi .judul h2,
+.contoh .judul h2 {
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 1.4rem;
+}
+
+.macam .judul p,
+.hukum .judul p {
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 3rem;
+}
+
+.macam h2 span,
+.jenis h2 span,
+.hukum h2 span,
+.kaidah h2 span,
+.energi h2 span,
+.contoh h2 span {
+  color: #748e63;
+}
+
+.macam .entalpi .row,
+.macam .eksoterm .row {
+  display: flex;
+  margin-bottom: 5rem;
+}
+
+.macam .entalpi .row .macam-img,
+.macam .eksoterm .row .macam2-img {
+  flex: 1 1 45rem;
+}
+
+.macam .entalpi .row .macam-img img,
+.macam .eksoterm .row .macam2-img img {
+  width: 100%;
+}
+
+.macam .entalpi .row .content,
+.macam .eksoterm .row .content {
+  flex: 1 1 35rem;
+  padding: 0 1rem;
+}
+
+.macam .entalpi .row .content h3,
+.macam .eksoterm .row .content h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.macam .entalpi .row .content p,
+.macam .eksoterm .row .content p {
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+  line-height: 2;
+}
+/* Macam End */
+
+/* Jenis Start */
+.jenis .pembentukan .row h3,
+.jenis .penguraian .row h3,
+.jenis .pembakaran .row h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.jenis .pembentukan .row p,
+.jenis .penguraian .row p,
+.jenis .pembakaran .row p {
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+  line-height: 2;
+}
+/* Jenis End */
+
+/* hukum Start */
+.hukum .pengertian p,
+.hukum .contoh0 .bawah_img p {
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+  line-height: 2;
+}
+
+.hukum .contoh0 .row .contoh00 img {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+}
+
+.hukum .tahap1 .row,
+.hukum .tahap2 .row,
+.hukum .tahap3 .row,
+.hukum .tahap4 .row,
+.hukum .tahap5 .row,
+.hukum .tahap6 .row,
+.hukum .tahap7 .row {
+  /* display: flex; */
+  margin-bottom: 1rem;
+}
+
+.hukum .tahap1 .row .tahap1-img,
+.hukum .tahap2 .row .tahap2-img,
+.hukum .tahap3 .row .tahap3-img,
+.hukum .tahap4 .row .tahap4-img,
+.hukum .tahap5 .row .tahap5-img,
+.hukum .tahap6 .row .tahap6-img,
+.hukum .tahap7 .row .tahap7-img {
+  flex: 1 1 10rem;
+}
+
+.hukum .tahap1 .row .tahap1-img img {
+  width: 100%;
+}
+
+.hukum .tahap2 .row .tahap2-img img {
+  width: 100%;
+}
+
+.hukum .tahap3 .row .tahap3-img img {
+  width: 80%;
+  margin-left: 9rem;
+}
+
+.hukum .tahap4 .row .tahap4-img img {
+  width: 100%;
+}
+
+.hukum .tahap5 .row .tahap5-img img {
+  width: 50%;
+  margin-left: 18rem;
+}
+
+.hukum .tahap6 .row .tahap6-img img {
+  width: 100%;
+}
+.hukum .tahap7 .row .tahap7-img img {
+  width: 100%;
+}
+
+.hukum .tahap1 .row .content,
+.hukum .tahap2 .row .content1,
+.hukum .tahap2 .row .content2,
+.hukum .tahap4 .row .content,
+.hukum .tahap5 .row .content,
+.hukum .tahap6 .row .content,
+.hukum .tahap7 .row .content {
+  /* flex: 1 1 35rem; */
+  padding: 0 0.1rem;
+}
+
+.hukum .tahap1 .row .content h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1.1rem;
+}
+
+.hukum .tahap1 .row .content p {
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+  line-height: 2;
+}
+/* hukum End */
+
+/* Kaidah Start */
+.kaidah .content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.kaidah .content p {
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+  line-height: 2;
+}
+/* Kaidah End */
+
+/* Energi Start */
+.energi .content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.energi .content p {
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+  line-height: 2;
+}
+
+.energi .row .energi-img img {
+  width: 50%;
+  margin-left: 18rem;
+}
+
+/* Energi End */
+
+/* Contoh Start */
+.energi .content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.contoh .soal1 p {
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+  line-height: 2;
+}
+
+.contoh .row .soal1-img img {
+  width: 20%;
+  margin-left: 5rem;
+}
+/* Contoh End */
